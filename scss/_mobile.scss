@@ -1,0 +1,84 @@
+// Widescreens
+@include mediaXl{
+
+}
+
+// Desktops & laptops
+@include mediaLg{
+    .lg-heading{
+            line-height: 1;
+            margin-bottom: 2.9rem;
+        }
+    .sm-heading{
+        margin-bottom: 2rem;
+    }
+}
+
+// Tablets & small laptops
+@include mediaMd{
+    main#home{
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem;
+        
+        .lg-heading{
+            line-height: 1;
+            margin-bottom: 2rem;
+        }
+        .sm-heading{
+            margin-bottom: 2rem;
+        }
+    }
+
+    ul.menu-nav, div.menu-branding{
+        float: none;
+        width: 100%;
+
+        &.show{
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .menu-nav{
+        height: 75vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+
+    .menu-branding{
+        height: 25vh;
+        transform: translate3d(100%, 0, 0);
+    }
+}
+
+// Smartphones
+@include mediaSm{
+    main#home{
+        padding: 2rem;
+    }
+    .lg-heading{
+        font-size: 4.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 10vh;
+    }
+    .sm-heading{
+        font-size: 1.2rem;
+    }
+
+}
+
+// Smaller smartphones
+@include mediaXsm{
+    .menu-branding{
+        .portrait{
+            height: 7rem;
+            width: 7rem;
+        }
+    }
+    .lg-heading{
+        font-size: 3.5rem;
+    }
+    .sm-heading{
+        font-size: 1rem;
+    }
+}
