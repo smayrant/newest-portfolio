@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
         crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
     <title>Sheldrick Mayrant | Front End Web Developer</title>
 </head>
 
-<body id="bg-img">
+<body>
     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
             <div class="btn-line"></div>
         </div>
-
+        
         <nav class="menu">
             <div class="menu-branding">
                 <div class="portrait"></div>
@@ -39,22 +40,36 @@
             </ul>
         </nav>
     </header>
-    <main id="about">
-        <h1 class="lg-heading">About
-            <span class="text-secondary">Me</span>
-        </h1>
-        <h2 class="sm-heading">Here's a little about myself...</h2>
-        <div class="about-info">
-            <div class="portrait"></div>
-
-            <div class="bio">
-                <h3 class="text-secondary">Bio</h3>
-                <p></p>
+    <div class="container">
+        <main id="about">
+            <h1 class="lg-heading about-heading">About
+                <span class="text-secondary square-background">Me</span>
+            </h1>
+            <h2 class="sm-heading about-secondary-heading">Here's a little about myself...</h2>
+            <div class="about-info">
+                <img class="bio-img" src="images/portrait.jpg" alt="My portrait">
+    
+                <div class="bio">
+                    <h3 class="text-secondary bio-title">Bio</h3>
+                    <div class="bio-text-container">
+                        <p class="bio-text">I'm a detail-oriented Front End Developer that loves to learn about new web development concepts/technologies and improve
+                        upon my skills and abilities as a developer. I began my coding experience in college but I wasn't quite sure where programming
+                        would take me. After graduating, I ended up trying HTML, CSS, and Javascript and was immediately hooked.</p> 
+                        
+                        <p>Creating user-focused
+                        web applications is something that I find fun and thoroughly enjoy doing. When I'm not consumed with writing code, you can
+                        find me surfing the web on sites such as Hackernoon or FreeCodeCamp or brushing up on my skills and learning about the web's
+                        newest and most useful technologies. And when I'm not doing anything related to web development, you can find me watching
+                        and rooting for any of the Washington DC area sports teams.</p>
+                    </div>
+                </div>
             </div>
-        </div>
-    </main>
+        </main>
+    </div>
     <footer id="main-footer">
-        Copyright &copy; 2019. Created By Sheldrick Mayrant
+        <div class="footer-content">
+            Copyright &copy; 2019. Created By <span class="footer-name">Sheldrick Mayrant</span>
+        </div>
     </footer>
     <script src="js/main.js"></script>
 </body>

@@ -1,0 +1,65 @@
+.about-secondary-heading{
+    font-weight: 300;
+}
+
+.about-heading{
+    margin-top: 10vh !important;
+}
+
+.about-heading::before{
+    content: "<h1>";
+    font-size: 1rem;
+    display: block;
+    opacity: .1;
+    font-family: "Pinyon Script";
+}
+
+.about-heading::after{
+    content: "</h1>";
+    font-size: 1rem;
+    display: block;
+    opacity: .1;
+    font-family: "Pinyon Script";
+}
+
+.bio{
+    &-img{
+        border-radius: 50%;
+        border: solid 3px $secondary-color;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 8rem;
+        transition: all;
+        @include transition; 
+    
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    
+    &-title{
+        font-size: 1.7rem;
+    }
+
+    &-text-container::before{
+        content: "<p>";
+        font-size: 1rem;
+        display: block;
+        opacity: .1;
+        font-family: "Pinyon Script";
+    }
+
+    &-text-container::after{
+        content: "</p>";
+        font-size: 1rem;
+        display: block;
+        opacity: .1;
+        font-family: "Pinyon Script";
+    }
+
+    &-text-container{
+        font-weight: 300;
+    }
+
+}
