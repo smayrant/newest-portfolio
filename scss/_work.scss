@@ -1,0 +1,24 @@
+.work-secondary-heading{
+    font-weight: 300;
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+
+    img{
+        width: 100%;
+        box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
+        @include transition;
+
+        &:hover{
+            transform: scale(1.05);
+            border: $secondary-color solid 3px;
+        }
+    }
+
+    &-button-text{
+        font-weight: 300;
+    }
+}

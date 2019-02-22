@@ -106,20 +106,6 @@ h1, h2, h3 {
 .about-heading {
   margin-top: 10vh !important; }
 
-.about-heading::before {
-  content: "<h1>";
-  font-size: 1rem;
-  display: block;
-  opacity: .1;
-  font-family: "Pinyon Script"; }
-
-.about-heading::after {
-  content: "</h1>";
-  font-size: 1rem;
-  display: block;
-  opacity: .1;
-  font-family: "Pinyon Script"; }
-
 .bio-img {
   border-radius: 50%;
   border: solid 3px #549eff;
@@ -151,6 +137,23 @@ h1, h2, h3 {
 
 .bio-text-container {
   font-weight: 300; }
+
+.work-secondary-heading {
+  font-weight: 300; }
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem; }
+  .projects img {
+    width: 100%;
+    box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
+    transition: all .5s ease-in-out; }
+    .projects img:hover {
+      transform: scale(1.05);
+      border: #549eff solid 3px; }
+  .projects-button-text {
+    font-weight: 300; }
 
 .footer-content {
   text-align: center;
@@ -217,16 +220,103 @@ main {
     overflow: hidden;
     margin-top: 20vh; }
 
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: .5rem 1rem;
+  border: 0;
+  margin-bottom: .3rem;
+  border-radius: 3px;
+  margin: .9rem 0;
+  color: #fff; }
+
+.hvr-rectangle-out {
+  display: block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: #e1e1e1;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
+
+.hvr-rectangle-out:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out; }
+
+.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+  color: white; }
+
+.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  border-radius: 3px; }
+
+.btn-dark {
+  background: #2b2b2b;
+  color: #fff; }
+  .btn-dark::before {
+    background: #3b90ff; }
+
+.btn-light {
+  background: #3b90ff; }
+  .btn-light::before {
+    background: #2b2b2b; }
+
 .square-background {
   padding: 1rem;
   background: grey; }
+
+.background-h1-tag::before {
+  content: "<h1>";
+  font-size: 1rem;
+  display: block;
+  opacity: .1;
+  font-family: "Pinyon Script"; }
+
+.background-h1-tag::after {
+  content: "</h1>";
+  font-size: 1rem;
+  display: block;
+  opacity: .1;
+  font-family: "Pinyon Script"; }
+
+.background-div-tag::before {
+  content: "<div>";
+  font-size: 1rem;
+  display: block;
+  opacity: .1;
+  font-family: "Pinyon Script"; }
+
+.background-div-tag::after {
+  content: "</div>";
+  font-size: 1rem;
+  display: block;
+  opacity: .1;
+  font-family: "Pinyon Script"; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .lg-heading {
     line-height: 1;
     margin-bottom: 2.9rem; }
   .sm-heading {
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  .projects {
+    grid-template-columns: repeat(3, 1fr); } }
 
 @media screen and (max-width: 768px) {
   main#home {
@@ -249,13 +339,15 @@ main {
     font-size: 24px; }
   .menu-branding {
     height: 25vh;
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0); }
+  .projects {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
   main#home {
     padding: 2rem; }
   .lg-heading {
-    font-size: 4.5rem;
+    font-size: 4rem;
     margin-bottom: 2.5rem;
     margin-top: 10vh; }
   .sm-heading {
@@ -263,7 +355,11 @@ main {
   .menu .nav-link {
     font-size: 22px; }
   #about {
-    padding: 2.5rem; } }
+    padding: 2.5rem; }
+  #work {
+    padding: 2.5rem; }
+  .projects {
+    grid-template-columns: 1fr; } }
 
 @media screen and (max-width: 400px) {
   .menu-branding .portrait {
