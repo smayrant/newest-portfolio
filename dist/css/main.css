@@ -100,9 +100,6 @@ h1, h2, h3 {
 .nav-item:nth-child(4) {
   transition-delay: 0.6s; }
 
-.about-secondary-heading {
-  font-weight: 300; }
-
 .about-heading {
   margin-top: 10vh !important; }
 
@@ -136,9 +133,6 @@ h1, h2, h3 {
   font-family: "Pinyon Script"; }
 
 .bio-text-container {
-  font-weight: 300; }
-
-.work-secondary-heading {
   font-weight: 300; }
 
 .projects {
@@ -211,7 +205,7 @@ main {
   main .icon-container {
     margin-top: 1rem; }
     main .icon-container a {
-      padding: 0.4rem;
+      padding-right: 2rem;
       color: #549eff; }
       main .icon-container a:hover {
         color: #fff;
@@ -276,6 +270,12 @@ main {
   background: #3b90ff; }
   .btn-light::before {
     background: #2b2b2b; }
+
+.contact-btn {
+  display: inline-block; }
+
+.secondary-heading {
+  font-weight: 300; }
 
 .square-background {
   padding: 1rem;
