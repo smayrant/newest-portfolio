@@ -135,6 +135,9 @@ h1, h2, h3 {
 .bio-text-container {
   font-weight: 300; }
 
+.work-heading {
+  margin-top: 10vh !important; }
+
 .projects {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
