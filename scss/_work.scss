@@ -9,6 +9,8 @@
 
     img{
         width: 100%;
+        display: block;
+        height: auto;
         box-shadow: 0 20px 80px 0 rgba(0,0,0,.45);
         @include transition;
 
@@ -21,4 +23,39 @@
     &-button-text{
         font-weight: 300;
     }
+
+    .item{
+        position: relative;
+
+    }
+
+    .overlay{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+        background: rgba(0,0,0,.90);
+        @include transition;
+
+        &:hover{
+            opacity: 1;
+        }
+
+        &-icon{
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+    }
+
 }
+        

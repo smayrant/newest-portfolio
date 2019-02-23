@@ -75,7 +75,6 @@ main{
     padding: .5rem 1rem;
     border: 0;
     margin-bottom: .3rem;
-    border-radius: 3px;
     margin: .9rem 0;
     color: #fff;
 }
@@ -115,7 +114,6 @@ main{
 .hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
   transform: scale(1);
-  border-radius: 3px;
 }
 
 .btn-dark{
