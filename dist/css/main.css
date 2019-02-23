@@ -314,22 +314,25 @@ main {
   font-weight: 300; }
 
 .square-background {
-  padding: 1rem;
-  background: grey; }
+  padding: 0 1rem;
+  background: grey;
+  max-width: 50%; }
 
 .background-h1-tag::before {
   content: "<h1>";
   font-size: 1rem;
   display: block;
   opacity: .1;
-  font-family: "Pinyon Script"; }
+  font-family: "Pinyon Script";
+  color: #fff; }
 
 .background-h1-tag::after {
   content: "</h1>";
   font-size: 1rem;
   display: block;
   opacity: .1;
-  font-family: "Pinyon Script"; }
+  font-family: "Pinyon Script";
+  color: #fff; }
 
 .background-div-tag::before {
   content: "<div>";
@@ -384,7 +387,9 @@ main {
       display: inline-block;
       margin: 1rem auto; }
     .project .overview-container {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .background-h1-tag::after {
+    padding-top: 1.5rem; } }
 
 @media screen and (max-width: 500px) {
   main#home {

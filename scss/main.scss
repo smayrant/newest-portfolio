@@ -146,8 +146,9 @@ main{
 
 // square background for text
 .square-background{
-    padding: 1rem;
+    padding: 0 1rem;
     background: grey;
+    max-width: 50%;
 }
 
 // stylings for background tags
@@ -157,6 +158,7 @@ main{
     display: block;
     opacity: .1;
     font-family: "Pinyon Script";
+    color: #fff;
 }
 
 .background-h1-tag::after{
@@ -165,6 +167,7 @@ main{
     display: block;
     opacity: .1;
     font-family: "Pinyon Script";
+    color: #fff;
 }
 
 .background-div-tag::before{
@@ -172,7 +175,7 @@ main{
     font-size: 1rem;
     display: block;
     opacity: .1;
-    font-family: "Pinyon Script";
+    font-family: "Pinyon Script"; 
 }
 
 .background-div-tag::after{

@@ -72,6 +72,10 @@
             max-width: 100%;
         }
     }
+
+    .background-h1-tag::after{
+        padding-top: 1.5rem;
+    }
 }
 
 // Smartphones
