@@ -59,6 +59,19 @@
     .projects{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .project{
+        flex-direction: column;
+
+        &-container{
+            display: inline-block;
+            margin: 1rem auto;
+        }
+
+        .overview-container{
+            max-width: 100%;
+        }
+    }
 }
 
 // Smartphones
@@ -81,12 +94,8 @@
         }
     }
 
-    #about{
-        padding: 2.5rem;
-    }
-
-    #work{
-        padding: 2.5rem;
+    .main-container{
+        padding: 2.5rem !important;
     }
 
     .projects{
@@ -108,5 +117,13 @@
     }
     .sm-heading{
         font-size: 1rem;
+    }
+
+    .project-btn-container{
+        flex-direction: column;
+    }
+
+    .btn-light{
+        margin-left: 0 !important;
     }
 }

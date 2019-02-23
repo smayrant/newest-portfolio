@@ -1,0 +1,38 @@
+.project-center-header{
+    text-align: center;
+}
+
+hr{
+    border: 1px solid $secondary-color;
+    width: 50%;
+}
+
+.project{ 
+    margin-top: 2rem;
+    display: flex;
+
+    &-container{
+        margin-right: 1.5rem;
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &-btn-container{
+        display: flex;
+        justify-content: center;
+    }
+    &-btn{
+        display: inline-block !important;
+    }
+
+    .overview-container{
+        max-width: 60%;
+    }
+}
+
+.btn-light{
+    margin-left: 1rem !important;
+}

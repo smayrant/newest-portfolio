@@ -3,6 +3,7 @@
 @import 'menu';
 @import 'about-me';
 @import 'work';
+@import 'project';
 @import 'footer';
 
 *{
@@ -40,6 +41,10 @@ header{
     color: $secondary-color;
 }
 
+.main-heading{
+    margin-top: 10vh !important;
+}
+
 
 main{
     padding: 4rem;
@@ -57,10 +62,11 @@ main{
             }
         }
     }
-    .lg-heading{
+}
+
+.lg-heading{
         overflow: hidden;
         margin-top: 20vh;
-    }
 }
 
 // button styles

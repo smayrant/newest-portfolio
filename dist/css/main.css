@@ -152,6 +152,32 @@ h1, h2, h3 {
   .projects-button-text {
     font-weight: 300; }
 
+.project-center-header {
+  text-align: center; }
+
+hr {
+  border: 1px solid #549eff;
+  width: 50%; }
+
+.project {
+  margin-top: 2rem;
+  display: flex; }
+  .project-container {
+    margin-right: 1.5rem; }
+    .project-container img {
+      max-width: 100%;
+      height: auto; }
+  .project-btn-container {
+    display: flex;
+    justify-content: center; }
+  .project-btn {
+    display: inline-block !important; }
+  .project .overview-container {
+    max-width: 60%; }
+
+.btn-light {
+  margin-left: 1rem !important; }
+
 .footer-content {
   text-align: center;
   padding: .3rem;
@@ -202,6 +228,9 @@ header {
 .text-secondary {
   color: #549eff; }
 
+.main-heading {
+  margin-top: 10vh !important; }
+
 main {
   padding: 4rem;
   min-height: calc(100vh - 25.594px); }
@@ -213,9 +242,10 @@ main {
       main .icon-container a:hover {
         color: #fff;
         transition: all .5s ease-in-out; }
-  main .lg-heading {
-    overflow: hidden;
-    margin-top: 20vh; }
+
+.lg-heading {
+  overflow: hidden;
+  margin-top: 20vh; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -344,7 +374,14 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
   .projects {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .project {
+    flex-direction: column; }
+    .project-container {
+      display: inline-block;
+      margin: 1rem auto; }
+    .project .overview-container {
+      max-width: 100%; } }
 
 @media screen and (max-width: 500px) {
   main#home {
@@ -357,10 +394,8 @@ main {
     font-size: 1.2rem; }
   .menu .nav-link {
     font-size: 22px; }
-  #about {
-    padding: 2.5rem; }
-  #work {
-    padding: 2.5rem; }
+  .main-container {
+    padding: 2.5rem !important; }
   .projects {
     grid-template-columns: 1fr; } }
 
@@ -371,4 +406,8 @@ main {
   .lg-heading {
     font-size: 3.5rem; }
   .sm-heading {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .project-btn-container {
+    flex-direction: column; }
+  .btn-light {
+    margin-left: 0 !important; } }
