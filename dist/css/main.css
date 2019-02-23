@@ -175,8 +175,11 @@ hr {
   .project .overview-container {
     max-width: 60%; }
 
-.btn-light {
+.github-btn {
   margin-left: 1rem !important; }
+
+.view-all-projects-container {
+  text-align: center; }
 
 .footer-content {
   text-align: center;
