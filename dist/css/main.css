@@ -205,7 +205,8 @@ hr {
   margin-left: 1rem !important; }
 
 .view-all-projects-container {
-  text-align: center; }
+  text-align: center;
+  margin-top: 2rem; }
 
 .footer-content {
   text-align: center;
@@ -379,7 +380,9 @@ main {
   .sm-heading {
     margin-bottom: 2rem; }
   .projects {
-    grid-template-columns: repeat(3, 1fr); } }
+    grid-template-columns: repeat(3, 1fr); }
+  .square-background {
+    max-width: 70%; } }
 
 @media screen and (max-width: 768px) {
   main#home {
@@ -413,7 +416,9 @@ main {
     .project .overview-container {
       max-width: 100%; }
   .background-h1-tag::after {
-    padding-top: 1.5rem; } }
+    padding-top: 1.5rem; }
+  .square-background {
+    max-width: 89%; } }
 
 @media screen and (max-width: 500px) {
   main#home {

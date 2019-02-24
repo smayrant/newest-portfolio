@@ -18,6 +18,10 @@
     .projects{
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .square-background{
+        max-width: 70%;
+    }
 }
 
 // Tablets & small laptops
@@ -75,6 +79,10 @@
 
     .background-h1-tag::after{
         padding-top: 1.5rem;
+    }
+
+    .square-background{
+        max-width: 89%;
     }
 }
 
