@@ -138,12 +138,16 @@ h1, h2, h3 {
 .bio .skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; }
+  justify-content: center;
+  padding: 0; }
   .bio .skills-list li {
     margin: .5rem;
     list-style: none;
     padding: 1rem;
     background: #549eff; }
+    .bio .skills-list li:hover {
+      transform: scale(1.1);
+      transition: all .5s ease-in-out; }
 
 .work-heading {
   margin-top: 10vh !important; }
@@ -413,7 +417,7 @@ main {
   .projects {
     grid-template-columns: repeat(3, 1fr); }
   .square-background {
-    max-width: 70%; } }
+    max-width: 75%; } }
 
 @media screen and (max-width: 768px) {
   main#home {
@@ -425,10 +429,12 @@ main {
       margin-bottom: 2rem; }
     main#home .sm-heading {
       margin-bottom: 2rem; }
-  ul.menu-nav, div.menu-branding {
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%; }
-    ul.menu-nav.show, div.menu-branding.show {
+    ul.menu-nav.show,
+    div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
@@ -449,7 +455,9 @@ main {
   .background-h1-tag::after {
     padding-top: 1.5rem; }
   .square-background {
-    max-width: 89%; } }
+    max-width: 100%; }
+  #showtrackr-heading {
+    font-size: 4.4rem; } }
 
 @media screen and (max-width: 500px) {
   main#home {
@@ -465,7 +473,9 @@ main {
   .main-container {
     padding: 2.5rem !important; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  #showtrackr-heading {
+    font-size: 3.8rem; } }
 
 @media screen and (max-width: 400px) {
   .menu-branding .portrait {
@@ -478,4 +488,6 @@ main {
   .project-btn-container {
     flex-direction: column; }
   .btn-light {
-    margin-left: 0 !important; } }
+    margin-left: 0 !important; }
+  #showtrackr-heading {
+    font-size: 2.6rem; } }
