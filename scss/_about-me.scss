@@ -1,45 +1,57 @@
-.about-heading{
-    margin-top: 10vh !important;
+.about-heading {
+	margin-top: 10vh !important;
 }
 
-.bio{
-    &-img{
-        border-radius: 50%;
-        border: solid 3px $secondary-color;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 8rem;
-        transition: all;
-        @include transition; 
-    
-        &:hover{
-            transform: scale(1.1);
-        }
-    }
-    
-    &-title{
-        font-size: 1.7rem;
-    }
+.bio {
+	&-img {
+		border-radius: 50%;
+		border: solid 3px $secondary-color;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 8rem;
+		transition: all;
+		@include transition;
 
-    &-text-container::before{
-        content: "<p>";
-        font-size: 1rem;
-        display: block;
-        opacity: .1;
-        font-family: "Pinyon Script";
-    }
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
 
-    &-text-container::after{
-        content: "</p>";
-        font-size: 1rem;
-        display: block;
-        opacity: .1;
-        font-family: "Pinyon Script";
-    }
+	&-title {
+		font-size: 1.7rem;
+	}
 
-    &-text-container{
-        font-weight: 300;
-    }
+	&-text-container::before {
+		content: "<p>";
+		font-size: 1rem;
+		display: block;
+		opacity: .1;
+		font-family: "Pinyon Script";
+	}
 
+	&-text-container::after {
+		content: "</p>";
+		font-size: 1rem;
+		display: block;
+		opacity: .1;
+		font-family: "Pinyon Script";
+	}
+
+	&-text-container {
+		font-weight: 300;
+	}
+
+	.skills-list {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		li {
+			margin: .5rem;
+			list-style: none;
+			padding: 1rem;
+			background: $secondary-color;
+		}
+	}
 }

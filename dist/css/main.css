@@ -135,6 +135,16 @@ h1, h2, h3 {
 .bio-text-container {
   font-weight: 300; }
 
+.bio .skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  .bio .skills-list li {
+    margin: .5rem;
+    list-style: none;
+    padding: 1rem;
+    background: #549eff; }
+
 .work-heading {
   margin-top: 10vh !important; }
 
@@ -314,10 +324,14 @@ main {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out; }
 
-.hvr-rectangle-out:hover, .hvr-rectangle-out:focus, .hvr-rectangle-out:active {
+.hvr-rectangle-out:hover,
+.hvr-rectangle-out:focus,
+.hvr-rectangle-out:active {
   color: white; }
 
-.hvr-rectangle-out:hover:before, .hvr-rectangle-out:focus:before, .hvr-rectangle-out:active:before {
+.hvr-rectangle-out:hover:before,
+.hvr-rectangle-out:focus:before,
+.hvr-rectangle-out:active:before {
   -webkit-transform: scale(1);
   transform: scale(1); }
 
@@ -372,6 +386,23 @@ main {
   display: block;
   opacity: .1;
   font-family: "Pinyon Script"; }
+
+.fa-angle-double-left {
+  color: #549eff; }
+
+.visible {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 2s linear; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 2s, opacity 2s linear; }
+
+.animated {
+  animation-duration: 1.2s;
+  animation-delay: .3s; }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .lg-heading {
